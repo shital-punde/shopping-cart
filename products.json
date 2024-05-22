@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" OC01 OFFICE CHAIR",
+        "price": 200,
+        "image": "image/1.png"
+    },
+    {
+        "id": 2,
+        "name":" OC02 OFFICE CHAIR",
+        "price": 300,
+        "image": "image/2.png"
+    },
+    {
+        "id": 3,
+        "name":" OC03 OFFICE CHAIR",
+        "price": 400,
+        "image": "image/3.png"
+    },
+    {
+        "id": 4,
+        "name":" OC04 OFFICE CHAIR",
+        "price": 250,
+        "image": "image/4.png"
+    },
+    {
+        "id": 5,
+        "name":" OC05 OFFICE CHAIR",
+        "price": 350,
+        "image": "image/5.png"
+    },
+    {
+        "id": 6,
+        "name":" OC06 OFFICE CHAIR",
+        "price": 450,
+        "image": "image/6.png"
+    },
+    {
+        "id": 7,
+        "name":" OC07 OFFICE CHAIR",
+        "price": 280,
+        "image": "image/7.png"
+    },
+    {
+        "id": 8,
+        "name":" OC08 OFFICE CHAIR",
+        "price": 380,
+        "image": "image/1.png"
+    }
+
+]

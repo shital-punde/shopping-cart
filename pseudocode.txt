@@ -1,0 +1,31 @@
+PseudoCode of Shopping cart
+
+step 1 : Start
+step 2 : first we have to define the object to hold the functionality of the shopping cart
+step 3 : creating an array to store the products in the cart
+ste 4 : functionalities for each operation 
+        Add to cart : 
+        - Take a product and add it to the cart.
+        - If the product is already in the cart, increase its quantity.
+
+        Remove from Cart:
+        - Take the ID of the product and remove it from the cart.
+
+       Total Price:
+        - Go through all the products in the cart and add up their prices.
+
+      Calculate Average Price:
+        - Find the total price of all products and divide it by the number of products to find the average.
+
+      Filter Products:
+        - Accepts a maximum price.
+        - Filter out products with prices above the given maximum.
+
+      Sort Cart:
+        - Accepts a parameter for sorting order (ascending or descending).
+        - Sort the cart based on product prices.
+      Clear Cart:
+        - Empty the cart array and display a message.
+        
+ step 5 : Generate a dummy JSON for testing purpose.
+ step 6 : End 

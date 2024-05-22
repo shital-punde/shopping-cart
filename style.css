@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container h1{
+    text-align: center;
+    font-weight: 600;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    /* border: 1px solid #ccc; */
+    /* margin: 30px; */
+    /* padding: 10px; */
+    width: 300px;
+}
+.product img{
+    padding: 20px;
+    width:250px;
+}
+.product h3{
+    text-align: center;
+}
+.product p{
+    text-align: center;
+    font-size: 18px;
+}
+ button{
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(220, 220, 220);
+    color:rgb(10, 10, 10);
+    padding: 10px 0px;
+    border: none;
+    border-radius: 20px;
+   
+}
+.product button{
+    width:280px;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+
+
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    margin-bottom: 5px;
+}
+ul li button{
+    width:100px;
+    margin-left: 50px;
+}
