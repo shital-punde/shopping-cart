@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const cartItemsContainer = document.getElementById("cart-items");
     const totalPrice = document.getElementById("total-price");
     const averagePrice = document.getElementById("average-price");
-    const clearCartBtn = document.getElementById("clear-cart");
+    const clearCartBtn = document.getElementById("clear-cart"); // Get the Clear Cart button element
     let cart = [];
     let products = [];
 
