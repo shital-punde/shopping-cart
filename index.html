@@ -9,6 +9,14 @@
 <body>
     <div class="container">
         <h1>SHOPPING CART</h1>
+        <div class="sort-options">
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+            </select>
+        </div>
         <div class="products">
             <!-- Product cards will be added here -->
         </div>
@@ -19,8 +27,7 @@
             </ul>
             <p>Total Price : $<span id="total-price">0.00</span></p>
             <p>Average Price : $<span id="average-price">0.00</span></p>
-            <button id="clear-cart">Clear Cart</button>
-
+            <button id="clear-cart">Clear Cart</button> <!-- Clear Cart button added here -->
         </div>
     </div>
     <script src="script.js"></script>

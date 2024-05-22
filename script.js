@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const cartItemsContainer = document.getElementById("cart-items");
     const totalPrice = document.getElementById("total-price");
     const averagePrice = document.getElementById("average-price");
-    const clearCartBtn = document.getElementById("clear-cart"); // Get the Clear Cart button element
+    const clearCartBtn = document.getElementById("clear-cart");
+    const sortSelect = document.getElementById("sort");
     let cart = [];
     let products = [];
 
@@ -12,11 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
             products = data;
-            displayProducts(data);
+            displayProducts(products);
         });
 
     // Display products on the webpage
     function displayProducts(products) {
+        productsContainer.innerHTML = "";
         products.forEach(product => {
             const productCard = document.createElement("div");
             productCard.classList.add("product");
@@ -105,4 +107,22 @@ document.addEventListener("DOMContentLoaded", function() {
     function getProductById(productId) {
         return products.find(product => product.id === productId);
     }
+
+    // Handle sorting
+    sortSelect.addEventListener("change", function() {
+        const sortBy = sortSelect.value;
+        let sortedProducts = [...products]; // Create a copy of the products array to sort
+
+        if (sortBy === "price-asc") {
+            sortedProducts.sort((a, b) => a.price - b.price);
+        } else if (sortBy === "price-desc") {
+            sortedProducts.sort((a, b) => b.price - a.price);
+        } else if (sortBy === "name-asc") {
+            sortedProducts.sort((a, b) => a.name.localeCompare(b.name));
+        } else if (sortBy === "name-desc") {
+            sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
+        }
+
+        displayProducts(sortedProducts);
+    });
 });
